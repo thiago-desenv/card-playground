@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ButtonComponent {
   @Input({ required: true }) buttonText: string = '';
   @Input({ required: true }) buttonStyle: 'white' | 'purple' = 'white';
+  @Input('disabled') isDisabled: boolean = false;
 
   @Output('clicked') buttonClickedEmitt = new EventEmitter<void>();
 
