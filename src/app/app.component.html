@@ -1,4 +1,5 @@
-<app-card></app-card>
+<app-card [planType]="'Simples'" [planPrice]="100" [cardStyle]="'orange'"></app-card>
+<app-card [planType]="'Completo'" [planPrice]="200" [cardStyle]="'purple'"></app-card>
 
 <app-button [buttonText]="'Adquirir'" [buttonStyle]="'white'" [disabled]="true" (clicked)="buttonClicked()"></app-button>
 
