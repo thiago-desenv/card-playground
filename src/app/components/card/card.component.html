@@ -5,8 +5,8 @@
   ">
   <div class="card__plan card__item">Plano <b>{{ planType }}</b></div>
   <div class="card__price card__item">R$ {{ planPrice  }},00/Mês</div>
-<app-button
-  [buttonText]="'Adquiiiiiirir'"
-  [buttonStyle]="'white'"
-></app-button>
+  <app-button
+    [buttonText]="'Adquirir'"
+    [buttonStyle]="cardStyle === 'orange' ? 'white' : 'purple'"
+  ></app-button>
 </div>
