@@ -9,7 +9,7 @@ export class AppComponent {
   planType: string = 'Simples';
   planPrice: number = 5000;
 
-  buttonClicked() {
-    console.log('Button blicked!');
+  onCardButtonClicked() {
+    console.log('Button clicked!!!');
   }
 }
